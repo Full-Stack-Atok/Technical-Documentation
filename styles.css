@@ -1,0 +1,14 @@
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius:  5px;
+    overflow-x: auto;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+code {
+    font-family: monospace;
+    color: #333;
+}
