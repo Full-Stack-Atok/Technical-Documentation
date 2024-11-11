@@ -4,120 +4,137 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>HTML</title>
+        <title>Technical Documentation Page</title>
     </head>
     <body>
+        <nav id="nav-bar">
+            <header>HTML Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML_Document_Structure">HTML Document Structure</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Headings_and_Paragraphs">Headings and Paragraphs</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Text_Formatting">Text Formatting</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Links and Anchors">Links and Anchors</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Images">Images</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Lists">Lists</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Tables">Tables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Forms">Forms</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML Attributes">HTML Attributes</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML Semantic Elements">HTML Semantic Elements</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML Multimedia Elements">HTML Multimedia Elements</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#HTML5 New Features">HTML5 New Features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Best Practices in HTML">Best Practices in HTML</a>
+                </li>
+            </ul>
+        </nav>
         <main id="main-doc">
-            <section class="main-section">
-                <h2>Introduction</h2>
-                <p>
-                    JavaScript is a cross-platform, object-oriented scripting language. 
-                    It is a small and lightweight language. Inside a host environment (for example, a web browser), 
-                    JavaScript can be connected to the objects of its environment to provide programmatic control over them.
-                </p>
-                <p>
-                    JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. 
-                    Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
-                </p>
-                <ul>
-                    <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). 
-                        For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks,
-                        form input, and page navigation.
-                    </li>
-                    <li>
-                        Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database,
-                        provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
-                    </li>
-                </ul>
+            <section class="main-section" id="Introduction_to_HTML">
+                <header>Introduction to HTML</header>
+                <article>
+                    <p>
+                        HTML, or HyperText Markup Language, is the standard language used to create and structure webpages and web applications.
+                        It serves as the backbone of the web, defining the structure and elements on a page, such as headings, paragraphs, links, images, and more.
+                    </p>
+                    <p>
+                        Developed in the early 1990s, HTML has evolved significantly, with HTML5 being the latest version. HTML5 introduced new elements, attributes,
+                        and capabilities to enhance multimedia support, improve page semantics, and provide better control over the content layout.
+                    </p>
+                    <p>
+                        HTML is not a programming language, but a markup language, meaning it describes the structure of content rather than providing functionality.
+                        HTML works closely with CSS (for styling) and JavaScript (for interactivity) to deliver a full user experience on the web.
+                    </p>
+                </article>
             </section>
-            <section class="main-section">
-                <h2>What you should already know</h2>
-                <p>This guide assumes you have the following basic background:</p>
-                <ul>
-                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-                </ul>
+            <section class="main-section" id="HTML_Document_Structure">
+                <header>HTML Document Structure</header>
+                <article>
+                    <p>
+                        The HTML document structure defines the layout and essential components of any HTML file. At its core,
+                        an HTML document begins with a declaration and includes nested elements organized in a hierarchical structure.
+                    </p>
+                    <p><strong>Basic Structure:</strong></p>
+                    <ul>
+                        <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version. In modern HTML5, this is simply written as <code>&lt;!DOCTYPE html&gt;</code>.</li>
+                        <li><code>&lt;html&gt;</code>: The root element that wraps all the content of the page. It has `lang` attribute that specifies the language (e.g., <code>lang="en"</code> for English).</li>
+                        <li><code>&lt;head&gt;</code>: Contains meta-information about the document, including the title, character encoding, and links to external resources like CSS and JavaScript files.</li>
+                        <li><code>&lt;title&gt;</code>: Sets the page title, which appears in the browser tab and is important for SEO.</li>
+                        <li><code>&lt;body&gt;</code>: Contains the visible content of the webpage, such as text, images, links, and other elements that will be rendered on the page.</li>
+                    </ul>
+
+                    <p>Understanding this structure is essential, as it ensures a consistent layout and functionality across different browsers. Proper structuring also improves SEO, accessibility, and maintainability of the code.</p>
+                </article>
             </section>
-            <section class="main-section">
-                <h2>JavaScript and Java</h2>
-                <p>
-                    JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking.
-                    JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
-                </p>
-                <p>
-                    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model.
-                    The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects.
-                    JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
-                </p>
-                <p>
-                    JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces.
-                    Variables, parameters, and function return types are not explicitly typed.
-                </p>
+            <section class="main-section" id="Headings_and_Paragraphs">
+                <header>Headings and Paragraphs</header>
+                <article>
+                    <p>
+                        Headings and paragraphs are essential HTML elements used to structure content and improve readability.
+                        Headings define the main sections of a webpage, while paragraphs are used to present text content in a readable format.
+                    </p>
+
+                    <p>
+                        <strong>Headings:</strong> In HTML, headings are defined with the <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> tags. <code>&lt;h1&gt;</code> represents the most important heading, while <code>&lt;h6&gt;</code> is the least important.
+                    </p>
+                    <ul>
+                        <li><code>&lt;h1&gt;</code>: The main heading of the document, typically used for the title or main topic.</li>
+                        <li><code>&lt;h2&gt;</code>: Subheadings that are used to define subsections within the content.</li>
+                        <li><code>&lt;h3&gt;</code>: Used for smaller subsections, nested under <code>&lt;h2&gt;</code> if needed.</li>
+                        <li><code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>: Additional headings used for further breakdowns of sections or subsections.</li>
+                    </ul>
+
+                    <p><strong>Paragraphs:</strong> Paragraphs are define using the <code>&lt;p&gt;</code> tag. They used to group text into separate blocks, making the content more readable and structured.</p>
+                    <p>Both headings and paragraphs play an important role in creating an organized and well-structured webpage. Using them correctly enhances accessibility, SEO, and the overall user experience.</p>
+                </article>
             </section>
-            <section class="main-section">
-                <h2>Hello world</h2>
-                <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-                <pre><code>function greetMe(yourName) { alert("Hello " + yourName); }
-                    greetMe("World");</code></pre>
-                <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+            <section class="main-section" id="Text_Formatting">
+                <header>Text Formatting</header>
+                <article>
+                    <p>
+                        Text formatting in HTML allows developers to adjust the presentation of text for better readability, emphasis, and styling. HTML provides several elements to format text in a variety of ways,
+                        from simple styles like bold and italic to more advanced structures like blockquotes and code formatting.
+                    </p>
+                    <p><strong>Common Text Formatting Tags:</strong></p>
+                    <ul>
+                        <li><code>&lt;b&gt;</code>: Makes the text bold. However, it does'nt imply any importance, just visual styling.</li>
+                        <li><code>&lt;i&gt;</code>: Italicizes the text, often used for emphasis or to denote foreign words.</li>
+                        <li><code>&lt;strong&gt;</code>: Makes the text bold with emphasis, indicating that the text is of strong importance (used for accessibility and SEO).</li>
+                        <li><code>&lt;em&gt;</code>: Italicizes the text with emphasis, signaling that the text should be stressed (also improves accessibility).</li>
+                        <li><code>&lt;lt&gt;</code>: Underlines the text, ty</li>
+                    </ul>
+                </article>
             </section>
-            <section class="main-section">
-                <h2>Variables</h2>
-                <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-                <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive,
-                    letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
-                </p>
-                <p>
-                    You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers.
-                    Some examples of legal names are Number_hits, temp99, and _name.
-                </p>
-            </section>
-            <section class="main-section">
-                <h2>Declaring Variables</h2>
-                <p>You can declare a variable in three ways:</p>
-                <p>With the keyword var. For example,</p>
-                <pre><code>var x = 42.</code></pre>
-                <p>This syntax can be used to declare both local and global variables.</p>
-                <p>By simply assigning it a value. For example,</p>
-                <pre><code>x = 42.</code></pre>
-                <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
-                <p>With the keyword let. For example,</p>
-                <pre><code>let y = 13.</code></pre>
-                <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
-            </section>
-            <section class="main-section">
-                <h2>Variable scope</h2>
-                <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document.
-                    When you declare a variable within a function, it is called a local variable, because it is available only within that function.
-                </p>
-                <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within.
-                    For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
-                </p>
-                <pre><code>if (true) { var x = 5; } console.log(x); // 5</code></pre>
-                <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
-                <pre><code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is</code> <code>not defined</code></pre>
-            </section>
-            <section class="main-section">
-                <h2>Global variables</h2>
-                <p>Global variables are in fact properties of the global object. In web pages the global object is window,
-                    so you can set and access global variables using the window.variable syntax.
-                </p>
-                <p>
-                    Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name.
-                    For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
-                </p>
-            </section>
-            <section class="main-section">
-                <h2>Constants</h2>
-                <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier:
-                    it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
-                </p>
-                <pre><code>const PI = 3.14;</code></pre>
-                <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
-                <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
-                <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-            </section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
+            <section class="main-section"></section>
             <section class="main-section"></section>
             <section class="main-section"></section>
             <section class="main-section"></section>
