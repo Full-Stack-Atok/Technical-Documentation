@@ -23,7 +23,7 @@
                     <a class="nav-link" href="#Text_Formatting">Text Formatting</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Links and Anchors">Links and Anchors</a>
+                    <a class="nav-link" href="#Links_and_Anchors">Links and Anchors</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#Images">Images</a>
@@ -126,12 +126,76 @@
                         <li><code>&lt;i&gt;</code>: Italicizes the text, often used for emphasis or to denote foreign words.</li>
                         <li><code>&lt;strong&gt;</code>: Makes the text bold with emphasis, indicating that the text is of strong importance (used for accessibility and SEO).</li>
                         <li><code>&lt;em&gt;</code>: Italicizes the text with emphasis, signaling that the text should be stressed (also improves accessibility).</li>
-                        <li><code>&lt;lt&gt;</code>: Underlines the text, ty</li>
+                        <li><code>&lt;u&gt;</code>: Underlines the text, typically used for links but can be used elsewhere.</li>
+                        <li><code>&lt;mark&gt;</code>: Highlights the text by giving it a yellow background, often used to highlight keywords or search terms.</li>
+                        <li><code>&lt;del&gt;</code>: Strikes through the text, indicating deletion or removal.</li>
+                        <li><code>&lt;ins&gt;</code>: Underlines the text, indicating an insertion or update.</li>
                     </ul>
+
+                    <p><strong>Text Alignment:</strong> You can control the alignment of the text using the <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, or <code>&lt;h1&gt;</code> tags with CSS. For example:</p>
+                    <pre><code>p {
+                text-align: center;
+            }</code></pre>
+
+                    <p>Text formatting is crucial for enhancing the readability and visual appeal of a webpage. Using it effectively can also help convey meaning, highlight key information, and improve the overall user experience.</p>
                 </article>
             </section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
+            <section class="main-section" id="Links_and_Anchors">
+                <header>Links and Anchors</header>
+                <article>
+                    <p>Links and anchors are fundamental elements in HTML that allow users to navigate between pages or specific sections within a page. They are essential for creating a connected and interactive web experience.</p>
+                    
+                    <p><strong>Creating Links:</strong> Links are created using the <code>&lt;a&gt;</code> (anchor) tag. The <code>href</code> attribute defines the URL or the target location.</p>
+
+                    <ul>
+                        <li><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code>: Creates a link to an external website.</li>
+                        <li><code>&lt;a href="#sectionID"&gt;Go to Section&lt;/a&gt;</code> Links to a specific section on the same page by referencing an ID.</li>
+                        <li><code>&lt;a href="page.html"&gt;Go to page&lt;/a&gt;</code> Links to another page within the same website.</li>
+                    </ul>
+
+                    <p><strong>Attributes for Links:</strong></p>
+                    <ul>
+                        <li><code>target="_blank"</code>: Opens the link in a new tab or window.</li>
+                        <li><code>rel="noopener noreferrer"</code>: Often used with the <code>target="_blank"</code> for security purposes when linking to external sites.</li>
+                        <li><code>title="Description"</code>: Adds a tooltip with additional information about the link.</li>
+                    </ul>
+
+                    <p><strong>Anchors:</strong> Anchors are used to create internal links within the same page. They require an ID on the target element:</p>
+                    <pre><code>&lt;a href="#introduction"&gt;Go to Introduction&lt;/a&gt;</code></pre>
+                    <p>Then, place an <code>id</code> attribute on the target element:</p>
+                    <pre><code>&lt;section id="introduction"&gt;Introduction Content&lt;/section&gt;</code></pre>
+
+                    <p>Using links and anchors effectively enhances user navigation, making it easy to create smooth, intuitive pathways throughout a website.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Images">
+                <header>Images</header>
+                <article>
+                    <p>Images are an essential part of a web content, adding visual appeal, illustrating concepts, and enhancing user engagement. In HTML, images are embedded using the <code>&lt;img&gt;</code> tag.</p>
+                    
+                    <p><strong>Basic Image Tag:</strong></p>
+                    <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+
+                    <ul>
+                        <li><code>src</code>: Specifies the path to the image file. It can be a relative path (for local files) oran absolute URL (for external images).</li>
+                        <li><code>alt</code>: Provides alternative text for the image, used by screen readers and displayed if the image fails to load. This is important for accessibility and SEO.</li>
+                        <li><code>width</code> and <code>height</code>: Control the display size of the image. You can specify values in pixels or percentage.</li>
+                    </ul>
+
+                    <p><strong>Example:</strong></p>
+                    <pre><code>&lt;img src="example.jpg" alt="Example image of a sunset" width="500" height="300"&gt;</code></pre>
+                
+                    <p><strong>Responsive Images:</strong> To make images responsive, you can use CSS to ensure they adapt to different screen sizes. For example;:</p>
+                    <pre><code>img {
+                max-width: 100%;
+                height: auto;
+            }</code></pre>
+
+                    <p>This CSS ensures that the image scales proportionally to fit within its container.</p>
+
+                    <p>Images enhances user experience and can make content more engaging. Always use <code>alt</code> for text accessibility and consider image sizes to optimize load times.</p>
+                </article>
+            </section>
             <section class="main-section"></section>
             <section class="main-section"></section>
             <section class="main-section"></section>
