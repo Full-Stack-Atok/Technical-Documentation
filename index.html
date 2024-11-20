@@ -196,8 +196,141 @@
                     <p>Images enhances user experience and can make content more engaging. Always use <code>alt</code> for text accessibility and consider image sizes to optimize load times.</p>
                 </article>
             </section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
+            <section class="main-section" id="Lists">
+                <header>Lists</header>
+                <article>
+                    <p>Lists are a fundamental HTML element used to organize and present content in a structured way. HTML provides three types of lists: unordered lists, ordered lists, and description lists.</p>
+
+                    <p><strong>1. Unordered Lists:</strong> These are used to group items without any specific order. Items are typically displayed with bullet points.</p>
+                    <pre><code>&lt;ul&gt;
+                &lt;;li&gt;Item 1&lt;/li&gt;
+                &lt;;li&gt;Item 2&lt;/li&gt;
+                &lt;;li&gt;Item 3&lt;/li&gt;
+            &lt;/ul&gt;</code></pre>
+                    <p>Output:</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+
+                    <p><strong>2. Ordered Lists:</strong> These are used to display items in a specific sequence. Items are numbered automatically.</p>
+                    <pre><code>&lt;ol&gt;
+                &lt;li&gt;First Step&lt;/li&gt;
+                &lt;li&gt;Second Step&lt;/li&gt;
+                &lt;li&gt;Third Step&lt;/li&gt;
+            &lt;/ol&gt;</code></pre>
+                    <p>Output:</p>
+                    <ol>
+                        <li>First Step</li>
+                        <li>Second Step</li>
+                        <li>Third Step</li>
+                    </ol>
+
+                    <p><strong>3. Description Lists:</strong> These are used to display terms and their corresponding description.</p>
+                    <pre><code>&lt;dl&gt;
+                &lt;dt&gt;HTML&lt;/dt&gt;
+                &lt;dd&gt;The standard markup language for creating web pages.&lt;/dd&gt;
+                &lt;dt&gt;CSS&lt;/dt&gt;
+                &lt;dd&gt;A stylesheet language used to style HTML elements.&lt;/dd&gt;
+            &lt;/dl&gt;</code></pre>
+                    <p>Output:</p>
+                    <dl>
+                        <dt>HTML</dt>
+                        <dd>The standard markup language for creating web pages.</dd>
+                        <dt>CSS</dt>
+                        <dd>A stylesheet language used to style HTML elements.</dd>
+                    </dl>
+
+                    <p>Lists are versatile and essential for organizing content, making it more readable and engaging. They can also be styled using CSS to fit your webpage's design.</p>
+                </article>
+            </section>
+            <section class="main-section" id="Tables">
+                <header>Tables</header>
+                <article>
+                    <p>
+                        Tables in HTML are used to organize data into rows and columns. They are especially useful for displaying tabular data like schedules, pricing comparisons, or statistical data.
+                    </p>
+
+                    <p><strong>Basic Table example:</strong></p>
+                    <pre><code>&lt;Table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Name&lt;/th&gt;
+                    &lt;th&gt;Age&lt;/th&gt;
+                    &lt;th&gt;City&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Alice&lt;/th&gt;
+                    &lt;th&gt;25&lt;/th&gt;
+                    &lt;th&gt;New York&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Bob&lt;/th&gt;
+                    &lt;th&gt;30&lt;/th&gt;
+                    &lt;th&gt;Los Angeles&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;</code></pre>
+
+                    <p><strong>Explanation of Elements:</strong></p>
+                    <ul>
+                        <li><code>&lt;table&gt;</code>: Defines the table container.</li>
+                        <li><code>&lt;tr&gt;</code>: Represents a table row.</li>
+                        <li><code>&lt;th&gt;</code>: Defines a header cell in the table. Header cells are bold and centered by default.</li>
+                        <li><code>&lt;td&gt;</code>: Represents a standard data cell in  the table.</li>
+                    </ul>
+
+                    <p>Output:</p>
+                    <table border="1">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                        <tr>
+                            <th>Alice</th>
+                            <th>25</th>
+                            <th>New York</th>
+                        </tr>
+                        <tr>
+                            <th>Bob</th>
+                            <th>30</th>
+                            <th>Los Angeles</th>
+                        </tr>
+                    </table>
+
+                    <p><strong>Advanced Table Features:</strong></p>
+                    <ul>
+                        <li><strong>Adding Captions:</strong> Use <code>&lt;caption&gt;</code> to provide a title for the table.</li>
+                        <li><strong>Spanning Rows and Columns:</strong> Use <code>rowspan</code> and <code>colspan</code> to merge cells.</li>
+                    </ul>
+
+                    <p>Example with Captions and Spanning:</p>
+                    <pre><code>&lt;table border="1"&gt;
+                &lt;caption&gt;Student Grades&lt;/caption&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Name&lt;/th&gt;
+                    &lt;th&gt;Math&lt;/th&gt;
+                    &lt;th&gt;Science&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td rowspan="2"&gt;Alice&lt;/td&gt;
+                    &lt;td&gt;95&lt;/td&gt;
+                    &lt;td&gt;88&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="2"&gt;Excellent Performance&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;</code></pre>
+
+                    <p>Output:</p>
+                    <table border="1">
+                        <caption>Student Grades</caption>
+                        <tr>
+                            <th></th>
+                        </tr>
+                    </table>
+                </article>
+            </section>
             <section class="main-section"></section>
             <section class="main-section"></section>
             <section class="main-section"></section>
