@@ -326,13 +326,173 @@
                     <table border="1">
                         <caption>Student Grades</caption>
                         <tr>
-                            <th></th>
+                            <th>Name</th>
+                            <th>Math</th>
+                            <th>Science</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Alice</td>
+                            <td>95</td>
+                            <td>88</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Excellent Performance</td>
                         </tr>
                     </table>
+
+                    <p>Tables can be styled extensively using CSS for better aesthetics and responsiveness.</p>
                 </article>
             </section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
+            <section class="main-section" id="Forms">
+                <header>Forms</header>
+                <article>
+                    <p>
+                        Forms in HTML allow users to input data and send it to a server for processing. Forms are essential for collecting information such as  login credentials, search queries, or user feedback.
+                    </p>
+
+                    <p><strong>Basic Form Example:</strong></p>
+                    <pre><code>&lt;form action="/submit" method="post"&gt;
+                &lt;label for="name"&gt;Name:&lt;/label&gt;
+                &lt;input type="text" id="name" name="name" required&gt;
+
+                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" required&gt;
+
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;</code></pre>
+
+                    <p><strong>Explanation of Elements:</strong></p>
+                    <ul>
+                        <li><code>&lt;form&gt;</code>: Creates the form and defines how the data is sent using the <code>action</code> (destination) and <code>method</code> (HTTP method).</li>
+                        <li><code>&lt;label&gt;</code>: Provides a description for input fields. Labels improve accessibility.</li>
+                        <li><code>&lt;input&gt;</code>: Collect user input. The <code>type</code> attribute specifies the type of input (e.g., text, email).</li>
+                        <li><code>required</code>: Ensures that the input field must be filled before submission.</li>
+                        <li><code>&lt;button&gt;</code>: A clickable element to submit the form.</li>
+                    </ul>
+
+                    <p><strong>Output:</strong></p>
+                    <form action="/submit" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="name" name="email" required>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    <p><strong>Form Input Types:</strong></p>
+                    <ul>
+                        <li><code>text</code>: Single-line text input.</li>
+                        <li><code>password</code>: Hides user input for sensitive information.</li>
+                        <li><code>email</code>: Validates email format.</li>
+                        <li><code>number</code>: Accepts numeric input.</li>
+                        <li><code>checkbox</code>: Allows multiple selections.</li>
+                        <li><code>radio</code>: Allows a single selection from a group.</li>
+                        <li><code>submit</code>: Button to submit the form.</li>
+                    </ul>
+
+                    <p><strong>Example with Multiple Input Types:</strong></p>
+                    <pre><code>&lt;form action="/register" method="post"&gt;
+                &lt;label for="username"&gt;Username:&lt;/label&gt;
+                &lt;input type="text" id="username" name="username" required&gt;
+
+                &lt;label for="password"&gt;Password:&lt;/label&gt;
+                &lt;input type="password" id="password" name="password" required&gt;
+
+                &lt;label&gt;Gender:&gt;
+                &lt;input type="radio" id="male" name="gender" value="male"&gt;
+                &lt;label for="male"&gt;Male&lt;/label&gt;
+                &lt;input type="radio" id="female" name="gender" value="female"&gt;
+                &lt;label for="female"&gt;Female&lt;/label&gt;
+
+                &lt;label for="interests"&gt;Interests:&lt;/label&gt;
+                &lt;input type="checkbox" id="sports" name="interests" value="sports"&gt;
+                &lt;label for="sports"&gt;Sports&lt;/label&gt;
+                &lt;input type="checkbox" id="music" name="interests" value="music"&gt;
+                &lt;label for="music"&gt;Music&lt;/label&gt;
+
+                &lt;button type="submit"&gt;Register&lt;/button&gt;
+            &lt;/form&gt;</code></pre>
+
+                    <p><strong>Output:</strong></p>
+
+                    <form action="/register" method="post">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <label>Gender</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <label for="interests">Interests:</label>
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label>
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    <p>Forms can also include advanced features such as dropdowns, textarea, and file uploads, providing flexibility in collecting user input.</p>
+                </article>
+            </section>
+            <section class="main-section" id="HTML Attributes">
+                <header>HTML Attributes</header>
+                <article>
+                    <p>
+                        HTML attributes are special words used inside the opening tag of an element to define the properties or behavior of that element. They enhance the functionality and accessibility of elements in a webpage.
+                    </p>
+
+                    <p><strong>Basic Syntax:</strong></p>
+                    <pre><code>&lt;element attribute="value"&gt;Content&lt;/element&gt;</code></pre>
+
+                    <p><strong>Example:</strong></p>
+                    <pre><code>&lt;a href="https://www.example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+                    <p><strong>Explanation of Example:</strong></p>
+                    <ul>
+                        <li><code>href</code>: Specifies the URL of the link.</li>
+                        <li><code>&lt;target="_blank"</code>: Opens the link in a new tab.</li>
+                    </ul>
+
+                    <p><strong>Common HTML Attributes:</strong></p>
+                    <ul>
+                        <li><code>id</code>: Specifies a unique identifier for an element. Example: <code>&lt;div id="header"&gt;&lt;/div&gt;</code>.</li>
+                        <li><code>class</code>: Specifies one or more class names for an element. Example: <code>&lt;p class="text-center"&gt;&lt;/p&gt;</code>.</li>
+                        <li><code>style</code>: Defines inline CSS styles for an element. Example: <code>&lt;h1 style="color: blue;"&gt;Hello&lt;/h1&gt;</code>.</li>
+                        <li><code>src</code>: Specifies the source URL for the media elements like images or videos. Example: <code>&lt;img src="image.jpg" alt="Description"&gt;</code>.</li>
+                        <li><code>alt</code>: Provides alternative text for an image. Essential for accessibility.</li>
+                        <li><code>title</code>: Adds a tooltip that appears when the user hovers over the element. Example <code>&lt;button title="Click me!"&gt;Button&lt;/button&gt;</code>.</li>
+                        <li><code>disabled</code>: Disables a form input or button. Example: <code>&lt;button disabled&gt;Disabled Button&lt;/button&gt;</code>.</li>
+                    </ul>
+
+                    <p><strong>Global Attributes:</strong></p>
+                    <p>Global attributes can be applied to any HTML element:</p>
+                    <ul>
+                        <li><code>id</code>: Assigns unique identifier.</li>
+                        <li><code>class</code>: Groups elements using CSS styles.</li>
+                        <li><code>data-*</code>: Custom attributes for embedding additional data. Example: <code>&lt;div data-user-id="123"&gt;&lt;/div&gt;</code>.</li>
+                        <li><code>hidden</code>: Hides an element from the view. Example: <code>&lt;p hidden&gt;This is hidden text.&lt;/p&gt;</code>.</li>
+                        <li><code>lang</code>: Specifies the language of the element's content. Example: <code>&lt;p lang="en"&gt;Hello&lt;/p&gt;</code>.</li>
+                    </ul>
+
+                    <p><strong>Example with Multiple Attributes:</strong></p>
+                    <pre><code>&lt;img src="photo.jpg" alt="A Beautiful Landscape" class="image-thumbnail" id="landscape-photo"&gt;</code></pre>
+
+                    <p><strong>Output:</strong></p>
+                    <img src="https://via.placeholder.com/150" alt="A Beautiful Landscape" class="image-thumbnail" id="landscape-photo">
+
+                    <p>
+                        Understanding HTML attributes allows developers to add functionality, enhance user experience, and ensure their webpage is accessible and interactive.
+                    </p>
+                </article>
+            </section>
             <section class="main-section"></section>
             <section class="main-section"></section>
             <section class="main-section"></section>
