@@ -38,19 +38,19 @@
                     <a class="nav-link" href="#Forms">Forms</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#HTML Attributes">HTML Attributes</a>
+                    <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#HTML Semantic Elements">HTML Semantic Elements</a>
+                    <a class="nav-link" href="#HTML_Semantic_Elements">HTML Semantic Elements</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#HTML Multimedia Elements">HTML Multimedia Elements</a>
+                    <a class="nav-link" href="#HTML_Multimedia_Elements">HTML Multimedia Elements</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#HTML5 New Features">HTML5 New Features</a>
+                    <a class="nav-link" href="#HTML5_New_Features">HTML5 New Features</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#Best Practices in HTML">Best Practices in HTML</a>
+                    <a class="nav-link" href="#Best_Practices_in_HTML">Best Practices in HTML</a>
                 </li>
             </ul>
         </nav>
@@ -376,7 +376,7 @@
                         <input type="text" id="name" name="name">
 
                         <label for="email">Email:</label>
-                        <input type="email" id="name" name="email" required>
+                        <input type="email" id="email" name="email" required>
 
                         <button type="submit">Submit</button>
                     </form>
@@ -442,7 +442,7 @@
                     <p>Forms can also include advanced features such as dropdowns, textarea, and file uploads, providing flexibility in collecting user input.</p>
                 </article>
             </section>
-            <section class="main-section" id="HTML Attributes">
+            <section class="main-section" id="HTML_Attributes">
                 <header>HTML Attributes</header>
                 <article>
                     <p>
@@ -493,7 +493,7 @@
                     </p>
                 </article>
             </section>
-            <section class="main-section" id="HTML Semantic Elements">
+            <section class="main-section" id="HTML_Semantic_Elements">
                 <header>HTML Semantic Elements</header>
                 <article>
                     <p>
@@ -565,16 +565,16 @@
                     </aside>
                 </main>
 
-                <footer>
-                    <p>© 2024 Semantic HTML Guide</p>
-                </footer>
+                
+                <p>© 2024 Semantic HTML Guide</p>
+                
 
                 <p>
                     Using semantic elements ensures that your webpage is both user-friendly and technically optimized for modern web standards.
                 </p>
             </article>
             </section>
-            <section class="main-section" id="HTML Multimedia Elements">
+            <section class="main-section" id="HTML_Multimedia_Elements">
                 <header>HTML Multimedia Elements</header>
                 <article>
                     <p>
@@ -595,6 +595,28 @@
                                 </li>
                             </ul>
                         </li>
+                        <p><strong>Output:</strong></p>
+                        <audio controls>
+                            <source src="audiofile.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <li>
+                            <strong><code>&lt;video&gt;</code></strong>: Embeds video files.
+                            <ul>
+                                <li>Attributes: <code>src</code>, <code>controls</code>, <code>autoplay</code>, <code>loop</code>, <code>muted</code>, <code>poster</code></li>
+                                <li>Example:
+                                    <pre><code>&lt;video controls width="500"&gt;
+                &lt;source src="videofile.mp4" type="video/mp4"&gt;
+                Your browser does not support the video element.
+            &lt;/video&gt;</code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <p><strong>Output:</strong></p>
+                        <video controls width="500">
+                            <source src="videofile.mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
                         <li>
                             <strong><code>&lt;embed&gt;</code></strong>: Embeds external content, such as PDFs or Flash.
                             <ul>
@@ -603,16 +625,188 @@
                                     <pre><code>&lt;embed src="document.pdf" type="application/pdf" width="600" height="400"&gt;</code></pre>
                                 </li>
                             </ul>
+                            <p><strong>Output:</strong></p>
+                            <embed src="document.pdf" type="application/pdf" width="600" height="400">
                         </li>
                         <li>
                             <strong><code>&lt;iframe&gt;</code></strong>: Embeds another HTML document.
+                            <ul>
+                                <li>Attributes: <code>src</code>, <code>width</code>, <code>height</code>, <code>frameborder</code>, <code>allowfullscreen</code></li>
+                                <li>Example:
+                                    <pre><code>&lt;iframe src="https://example.com" width="600" height="400" frameborder="0"
+                &lt;/iframe&gt;</code></pre>
+                                </li>
+                            </ul>
+                            <p><strong>Output:</strong></p>
+                            <iframe src="https://www.wikipedia.org" width="600" height="400" frameborder="0" allowfullscreen></iframe>
+                        </li>
+                    </ul>
+                    <h3>Benefits of Multimedia Elements:</h3>
+                    <ul>
+                        <li>Improves user experience and engagement.</li>
+                        <li>Provides interactive and dynamic content.</li>
+                        <li>Eliminates the need for third-party plugins.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="HTML5_New_Features">
+                <header>HTML5 New Features</header>
+                <article>
+                    <p>
+                        HTML 5 introduced many new features and elements designed to improve web development and user experience. These features enhance multimedia handling, support better semantics, and allow for rich interactivity.
+                    </p>
+
+                    <h3>Key HTML 5 Features:</h3>
+                    <ul>
+                        <li>
+                            <strong>Semantic Elements:</strong> New elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code> improve the structure and meaning of the HTML document.
+                            <ul>
+                                <li>Example:
+                                    <pre><code>&lt;article&gt;
+                &lt;header&gt;Article Title&lt;/header&gt;
+                &lt;p&gt;Content of the article goes here.&lt;/p&gt;
+            &lt;/article&gt;</code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Multimedia Elements:</strong> HTML 5 introduced <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags to natively embed media without plugins.
+                            <ul>
+                                <li>Example:
+                                    <pre><code>&lt;video controls&gt;
+                &lt;source src="movie.mp4" type="video.mp4"&gt;
+                Your browser does not support the video element.
+            &lt;/video&gt;</code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Canvas and SVG:</strong> The <code>&lt;canvas&gt;</code> element enables drawing graphics directly in the browser using JavaScript.
+                            <ul>
+                                <li>Example:
+                                    <pre><code>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;
+                Your browser does not support the canvas element.
+                &lt;/canvas&gt;</code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>New Form Elements and Attributes:</strong> Input types like <code>email</code>, <code>date</code>, <code>code</code>, <code>range</code> and attributes like <code>placeholder</code> simplify form development.
+                            <ul>
+                                <li>Example:
+                                    <pre><code>&lt;input type="email" placeholder="Enter your email"&gt;</code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Offline Storage:</strong> Local storage and session storage replace cookies for storing larger data securely in the browser.
+                            <ul>
+                                <li>Example:
+                                    <pre><code>// JavaScript Example
+                localStorage.setItem('key', 'value');
+                console.log(localStorage.getItem('key'));</code></pre>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Geolocation:</strong> Enables location-based services in the browser.
+                            <ul>
+                                <li>Example:
+                                    <pre><code>// JavaScript Example
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    console.log('Latitude:', position,coords.latitude);
+                    console.log('Longitude:', position.coords.longitude);
+                });</code></pre>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
 
+                    <h3>Benefits of HTML 5:</h3>
+                    <ul>
+                        <li>Reduces reliance on third-party plugins.</li>
+                        <li>Improves cross-platform compatibility, especially for mobile devices.</li>
+                        <li>Enhances accessibility and semantic understanding for search engines.</li>
+                    </ul>
                 </article>
             </section>
-            <section class="main-section"></section>
-            <section class="main-section"></section>
+            <section class="main-section" id="Best_Practices_in_HTML">
+                <header>Best Practices in HTML</header>
+                <article>
+                    <p>
+                        Writing clean, semantic, and accessible HTML ensures better readability, maintainability, and compatibility of your web projects. Following best practices makes your code easier for developers and browsers to understand.
+                    </p>
+
+                    <h3>1. Use Semantic Elements</h3>
+                    <p>
+                        Semantic HTML elements, like <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code>, add meaning to the content, making it easier for search engines and assistive technologies to parse your document.
+                    </p>
+                    <pre><code>&lt;header&gt;
+                &lt;h1&gt;Welcome to My Website!&lt;/h1&gt;
+            &lt;/header&gt;</code></pre>
+
+                    <h3>2. Organize Your Code</h3>
+                    <p>
+                        Properly indent your code and use comments to explain sections. This improves readability for other developers.
+                    </p>
+                    <pre><code>&lt;!-- Navigation Section --
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;</code></pre>
+
+                    <h3>3. Keep It Accessible</h3>
+                    <p>
+                        Ensure your website is usable by everyone, including individuals with disabilities. Use attributes like <code>alt</code> for images and <code>aria-*</code> roles for dynamic content.
+                    </p>
+                    <pre><code>&lt;img src="logo.png" alt="Company Logo"&gt;</code></pre>
+
+                    <h3>4. Minimize Inline Styles</h3>
+                    <p>
+                        Separate structure (HTML) from the design (CSS) by avoiding inline styles and using external stylesheets.
+                    </p>
+                    <pre><code>&lt;!-- Avoid this: --&gt;
+            &lt;div style="color: blue, font-size: 20px;"&gt;Hello World!&lt;/div&gt;
+
+            &lt;!-- Instead, use CSS: --&gt;
+            &lt;div class="greeting"&gt;Hello, World!&lt;/div&gt;</code></pre>
+
+                    <h3>5. Use Meaningful Class and ID Names</h3>
+                    <p>
+                        Choose descriptive class and ID names to improve the maintainability of your code.
+                    </p>
+                    <pre><code>&lt;div id="main-content"&gt;
+                &lt;h2&gt;About Us&lt;/h2&gt;
+            &lt;/div&gt;</code></pre>
+
+                    <h3>6. Optimize Media</h3>
+                    <p>
+                        Compress and properly size images and videos to improve loading times and performance.
+                    </p>
+                    <pre><code>&lt;img src="optimized-image.jpg" alt="Beautiful Landscape" loading="lazy"&gt;</code></pre>
+
+                    <h3>7. Validate Your Code</h3>
+                    <p>
+                        Use an HTML validator to ensure your code adheres to web standards and is error-free.
+                    </p>
+                    <pre><code>https://validator.w3.org/</code></pre>
+
+                    <h3>8. Avoid Deprecated Elements</h3>
+                    <p>
+                        Do not use outdated tags like <code>&lt;font&gt;</code> or <code>&lt;center&gt;</code>. Instead, use CSS for styling and layout.
+                    </p>
+                    <pre><code>&lt;!-- Avoid --&gt;
+            &lt;font color="red"&gt;Warning!&lt;/font&gt;
+
+            &lt;!-- Use CSS --&gt;
+            &lt;span style="color: red;"&gt;Warning!&lt;/span&gt;</code></pre>
+                </article>
+            </section>
         </main>
+        <footer>
+            <p>&copy; 2024 <a href="https://www.facebook.com/profile.php?id=61567812544551" target="_blank" class="footer-link">Sherwin Kerby F. Atok</a>. All rights reserved.</p>
+        </footer>
     </body>
 </html>
