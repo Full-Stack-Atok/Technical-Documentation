@@ -36,7 +36,7 @@ p {
 
 /* Style for the navigation bar */
 
-#nav-bar {
+#navbar {
     width: 200px;
     position: fixed;
     left: 0;
@@ -48,28 +48,28 @@ p {
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
-#nav-bar header {
+#navbar header {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-#nav-bar ul {
+#navbar ul {
     list-style-type: none;
     padding: 0;
 }
 
-#nav-bar li {
+#navbar li {
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
 }
 
-#nav-bar li:last-child {
+#navbar li:last-child {
     border-bottom: none;
 }
 
-#nav-bar .nav-link {
+#navbar .nav-link {
     text-decoration: none;
     color: #333;
     font-size: 1em;
